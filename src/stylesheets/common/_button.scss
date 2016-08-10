@@ -8,6 +8,8 @@
   color: $brand-primary;
 
   &.button-border {
+    margin: 10px 0;
+
     &::before,&::after {
       content: '';
       display: block;

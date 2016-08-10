@@ -2,52 +2,186 @@
 
 <html lang="en">
 
-  <head>
+<head>
 
-    <title>Vue Js - Boilerplate</title>
+  <title>Lost Elements</title>
 
-    <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <!-- Favicon -->
 
-   <meta name="description" content="">
-   <meta name="keywords" content="">
-   <meta name="author" content="Patrick Heng">
-   <meta name="copyright" content="© Copyright 2016 - Patrick Heng" />
-   <meta name="location" content="Paris, FRANCE">
-
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="robots" content="noindex, nofollow">
-
-   <!-- Favicon -->
-
-   <!-- Facebook meta -->
-   <meta property="og:title" content=""/>
-   <meta property="og:image" content=""/>
-   <meta property="og:url" content=""/>
-   <meta property="og:site_name" content=""/>
-   <meta name="description" content=""/>
-
-   <!-- Twitter meta -->
-   <meta name="twitter:card" content="">
-   <meta name="twitter:site" content="@">
-   <meta name="twitter:creator" content="@">
-   <meta name="twitter:title" content="">
-   <meta name="twitter:description" content="">
-   <meta name="twitter:image:src" content="">
-
-   <!-- GOOGLE + Share -->
-   <meta itemprop="name" content="">
-   <meta itemprop="description" content="">
-   <meta itemprop="image" content="">
-
-  </head>
-
-  <body>
-
-    <div id="application">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css">
+</head>
+<body class="loading">
+  <nav id="nav-side" class="hidden-sm-down">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="220 17 60 314">
+      <path class="path" d="M248.2 303.3l-.3-8.4c0-.2 0-.4.1-.5.2-.2.4-.2.6-.1 6 .3 12 .2 18-.4l1.1 1.3c.5 9.9.1 26.7.2 26.7 0 0-1.9.5-2.9.6-11.8.5-23.7.6-35.5.4-.8-27-.5-53.9.7-80.9 4.4-1.6 23.7-.1 28.5-.9 5.1-.9 10.4.5 15.5-.3l-1.5-58s-16.4 1.4-16.7 1.1c-.2-.2-.2-.5-.2-.8-.4-8.4-.8-16.9-1.3-25.3l-.5.3c-9 .1-18 .2-27 .4.7-17.3.4-34.6-1.1-51.8-.1-.7-.1-1.5.4-2 .4-.5 1.2-.5 1.9-.5 12.3-.1 24.6-1.1 36.7-3.3 0 0 .1-43.5-.7-65.1-.1-3.1.1-7.2-.9-10.2-.3-.8-26.9.3-37.4.1-.1 9.4-.2 18.9-.2 28.3l18.6.4"/>
+      <path class="ghost-path" d="M248.2 303.3l-.3-8.4c0-.2 0-.4.1-.5.2-.2.4-.2.6-.1 6 .3 12 .2 18-.4l1.1 1.3c.5 9.9.1 26.7.2 26.7 0 0-1.9.5-2.9.6-11.8.5-23.7.6-35.5.4-.8-27-.5-53.9.7-80.9 4.4-1.6 23.7-.1 28.5-.9 5.1-.9 10.4.5 15.5-.3l-1.5-58s-16.4 1.4-16.7 1.1c-.2-.2-.2-.5-.2-.8-.4-8.4-.8-16.9-1.3-25.3l-.5.3c-9 .1-18 .2-27 .4.7-17.3.4-34.6-1.1-51.8-.1-.7-.1-1.5.4-2 .4-.5 1.2-.5 1.9-.5 12.3-.1 24.6-1.1 36.7-3.3 0 0 .1-43.5-.7-65.1-.1-3.1.1-7.2-.9-10.2-.3-.8-26.9.3-37.4.1-.1 9.4-.2 18.9-.2 28.3l18.6.4"/>
+    </svg>
+  </nav>
+  <main>
+      <section>
+        <div id="home">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-xs-center">
+                <img class="img-fluid m-x-auto d-block" src="/images/logo.png" alt="logo">
+                <h1>Lost elements</h1>
+              </div>
+            </div>
+          </div>
+          <button class="button button-border">Discover the game</button>
+        </div>
+      </section>
+      <section>
+        <div id="narration">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-xs-center">
+                <p>
+                  There was a time when harmony was insured among the elements,
+                  all around the Earth, by an ancient entity, Anjä.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="button button-skip" onclick="$.fn.fullpage.moveSectionDown();">Scroll to skip</button>
+        </div>
+      </section>
+      <section>
+        <div id="teaser">
+          <div class="embed-responsive">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rBAtqUzJgXA?enablejsapi=1&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <img class="button-play img-fluid m-x-auto d-block" src="/images/button-play.png" alt="play">
+          </div>
+        </div>
+      </section>
+      <section>
+        <ul id="parallax-concept-a">
+          <li class="layer" data-depth="0.40"><img src="/images/parallax-concept-a.png"></li>
+        </ul>
+        <div id="concept-a">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <h2>Why Lost elements</h2>
+                <div class="text-wrapper">
+                  <p>
+                    Global warming <span class="light-text">is a complicated concept,
+                  often poorly</span> explained <span class="light-text">by the media.</span>
+                  </p>
+                  <p>
+                  <span class="light-text">But what if there was a way for the young adults
+                  to apprehend this phenomenon a little bit better,
+                  and</span> feel concerned <span class="light-text">about it ?</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="concept-b">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <h2>What is it</h2>
+                <div class="text-wrapper">
+                  <p>
+                    Lost Elements <span class="light-text">is an</span> iPad puzzle game, <span class="light-text">where your actions have more</span>
+                    consequences <span class="light-text">than you would imagine. You will help Anjäw</span> restaure balance
+                <span class="light-text">between nature and humankind, with the relic that she gave you to use
+                withw</span> great care.
+                  </p>
+                  <p>
+                  <span class="light-text">You can access the infos about each facts that we alluded to
+                  hroughout the game below</span>
+                  </p>
+                </div>
+                <button class="button button-border">Learn more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul id="parallax-concept-b-top">
+          <li class="layer" data-depth="0.10"><img src="/images/parallax-concept-b-top.png"></li>
+        </ul>
+        <ul id="parallax-concept-b-bottom">
+          <li class="layer" data-depth="0.15"><img src="/images/parallax-concept-b-bottom.png"></li>
+        </ul>
+      </section>
+      <section>
+        <div id="demo">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-xs-center">
+                <p>Demonstration</p>
+                <div class="demo-video-border">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WIGH5L2awA0?enablejsapi=1&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <img class="button-play img-fluid m-x-auto d-block" src="/images/button-play.png" alt="play">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="team">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <h2>Team</h2>
+              </div>
+              <div class="col-xs-6 col-md-3 text-xs-center">
+                <img class="img-circle img-fluid m-x-auto d-block" src="/images/anthelme.png" alt="Anthelme Dumont">
+                <span class="team-name">Anthelme Dumont</span>
+                <span class="team-part">Developer</span>
+                <span class="team-link"></span>
+              </div>
+              <div class="col-xs-6 col-md-3 text-xs-center">
+                <img class="img-circle img-fluid m-x-auto d-block" src="/images/kirgan.png" alt="Kirgan Somville">
+                <span class="team-name">Kirgan Somville</span>
+                <span class="team-part">Developer</span>
+                <span class="team-link"></span>
+              </div>
+              <div class="col-xs-6 col-md-3 text-xs-center">
+                <img class="img-circle img-fluid m-x-auto d-block" src="/images/mel.png" alt="Mélanie Lo">
+                <span class="team-name">Mélanie Lo</span>
+                <span class="team-part">Designer</span>
+                <span class="team-link"></span>
+              </div>
+              <div class="col-xs-6 col-md-3 text-xs-center">
+                <img class="img-circle img-fluid m-x-auto d-block" src="/images/sofia.png" alt="Sofia Boggio">
+                <span class="team-name">Sofia Boggio</span>
+                <span class="team-part">Designer</span>
+                <span class="team-link"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul id="parallax-team-left">
+          <li class="layer" data-depth="0.20"><img src="/images/parallax-team-left.png"></li>
+        </ul>
+        <ul id="parallax-team-right">
+          <li class="layer" data-depth="0.20"><img src="/images/parallax-team-right.png"></li>
+        </ul>
+      </section>
+  </main>
+  <div id="loader">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <img class="img-fluid m-x-auto d-block" src="/images/logo.png" alt="logo">
+        </div>
+      </div>
     </div>
-
-  </body>
-
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="/vendors/ascensor.js/jquery.ascensor.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js"></script>
+</body>
 </html>
+

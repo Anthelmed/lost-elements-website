@@ -1,0 +1,54 @@
+.button {
+  position: relative;
+  font-size: 16.5px;
+  width: 192px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  color: $brand-primary;
+
+  &.button-border {
+    &::before,&::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 192px;
+      height: 55px;
+      background-image: url('/images/button-border.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: 0.3s linear;
+    }
+
+
+    &::before {
+      top: 4px;
+      left: 4px
+    }
+
+    &::after {
+      top: -4px;
+      left: -4px
+    }
+
+    &:hover {
+      &::before,&::after {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &.button-skip {
+    &::after {
+      content: '';
+      display: block;
+      margin: auto;
+      width: 32px;
+      height: 17px;
+      background-image: url('/images/button-skip.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

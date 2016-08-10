@@ -1,4 +1,19 @@
+section {
+  overflow: hidden!important;
+  width: 100vw!important;
+  height: 100vh!important;
+}
+
 .container {
-  width: 100%;
+  position: relative;
+  width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.row{
+  width: 100vw;
 }

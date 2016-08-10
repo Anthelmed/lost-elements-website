@@ -1,0 +1,40 @@
+.embed-responsive {
+
+  &::after, .button-play {
+    transition: 0.3s linear;
+
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7,24,38,0.99);
+  }
+
+  .button-play {
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+  .button-play, iframe {
+    pointer-events: none;
+  }
+
+  &.active {
+    &::after, .button-play {
+      opacity: 0;
+    }
+  }
+
+}
+

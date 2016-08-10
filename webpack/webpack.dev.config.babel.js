@@ -28,13 +28,6 @@ export default {
     ]
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        loader: 'eslint'
-      }
-    ],
     loaders: [
       {
         test: /\.html?$/,
@@ -56,12 +49,10 @@ export default {
       },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
         loaders: ['style', 'css']
       },
       {
         test: /\.scss$/,
-        exclude: /node_modules/,
         loaders: ['style', 'css', 'sass']
       }
     ]
@@ -78,9 +69,6 @@ export default {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       '__DEV__': JSON.stringify(true),
       '__PROD__': JSON.stringify(false)
-    }),
-    new webpack.ProvidePlugin({
-      'Vue': 'vue'
     }),
     new CopyWebpackPlugin([
       { from: 'static' }

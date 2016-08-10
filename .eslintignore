@@ -1,8 +1,0 @@
-# Ignore some folders
-dist
-doc
-
-# Ignore config stuff
-server.*.js
-*config.js
-serviceworker.js

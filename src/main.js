@@ -1,36 +1,12 @@
-import Application from 'containers/Application';
+import App from './app';
 
-import Router from 'core/Router';
+let $body = $('body');
 
-import 'stylesheets/main.scss';
+$('main').imagesLoaded({ background: true })
+  .done( ( instance ) => {
+    setTimeout(() => {
+      $body.removeClass('loading');
+    },200);
+  });
 
-import domready from 'domready';
-
-class Main {
-
-  constructor() {
-
-    this.bind();
-
-    this.addEventListeners();
-
-    this.router = Router;
-
-    this.start();
-  }
-
-  bind() {}
-
-  addEventListeners() {}
-
-  start() {
-
-    this.router.start(Application, '#application');
-
-  }
-}
-
-domready(() => {
-
-  new Main();
-});
+new App();

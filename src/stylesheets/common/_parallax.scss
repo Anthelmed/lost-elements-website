@@ -1,0 +1,38 @@
+[id^="parallax-"] {
+  position: absolute;
+  width: 110vw;
+  height: auto;
+  pointer-events: none;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+#parallax-concept-a {
+  z-index: -1;
+  left: 25vw;
+}
+
+#parallax-concept-b-top {
+  top: 0;
+  left: -5vw;
+}
+
+#parallax-concept-b-bottom {
+  bottom: -3vh;
+  left: -5vw;
+}
+
+#parallax-team-left {
+  width: 55vw;
+  bottom: -3vh;
+  left: -5vw;
+}
+
+#parallax-team-right {
+  width: 55vw;
+  bottom: -3vh;
+  left: 60vw;
+}

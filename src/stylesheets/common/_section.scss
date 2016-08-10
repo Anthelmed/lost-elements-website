@@ -1,0 +1,74 @@
+#home, #narration, #concept-a, #demo, #concept-b, #team {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url('/images/background-home.jpg');
+
+  img {
+    max-width: 200px;
+  }
+
+  button {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+#narration {
+  background-image: url('/images/background-default.jpg');
+
+  button {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+#teaser {
+  background-image: url('/images/background-default.jpg');
+
+  .embed-responsive {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+#demo {
+  background-image: url('/images/background-demo.png');
+}
+
+#concept-a {
+  background-image: url('/images/background-concept-a.png');
+
+  .text-wrapper {
+    max-width: 500px;
+  }
+}
+
+#concept-b {
+  background-image: url('/images/background-concept-b.png');
+
+  .text-wrapper {
+    max-width: 700px;
+  }
+}
+
+#demo .demo-video-border {
+  background-image: url('/images/video-border.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 5vw;
+}
+
+#team {
+  background-image: url('/images/background-team.png');
+}

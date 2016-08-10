@@ -1,0 +1,32 @@
+#nav-side {
+  position: fixed;
+  right: 3vw;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 214px;
+  z-index: 1;
+  pointer-events: none;
+
+  .path, .ghost-path {
+    fill: none;
+  }
+  .path, .ghost-path {
+    stroke: $brand-primary;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+  }
+  .ghost-path {
+    opacity: 0.5;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #nav-side {
+    width: 60px;
+    height: 320px;
+  }
+}

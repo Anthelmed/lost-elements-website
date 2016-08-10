@@ -68,3 +68,11 @@
   @warn "Unkown '#{$key}' in $ease.";
   @return null;
 }
+
+@mixin animation($name, $seconds, $style, $totaltime) {
+  animation: $name $seconds $style $totaltime;
+  -ms-animation: $name $seconds $style $totaltime;
+  -webkit-animation: $name $seconds $style $totaltime;
+  -moz-animation: $name $seconds $style $totaltime;
+  -o-animation: $name $seconds $style $totaltime;
+}

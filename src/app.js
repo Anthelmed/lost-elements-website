@@ -37,7 +37,7 @@ class App {
       width: '100vw',
       height: '100vh',
       direction: [[0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[4,1],[4,2],[4,3],[4,4],[5,3],[6,3],[7,3],[8,3]],
-      time: 700,
+      time: 500,
       wheelNavigation: true,
       wheelNavigationDelay: 20
     });
@@ -93,7 +93,7 @@ class App {
     let sectionLength = $('.section').length;
     let progress = (navSidePathLength / sectionLength * (index + sectionLength + 1));
 
-    TweenMax.to("#nav-side .path", 0.7, {
+    TweenMax.to("#nav-side .path", 0.5, {
       strokeDasharray: navSidePathLength + ' ' + navSidePathLength,
       strokeDashoffset: progress
     });

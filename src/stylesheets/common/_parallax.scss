@@ -1,6 +1,5 @@
 [id^="parallax-"] {
   position: absolute;
-  width: 110vw;
   height: auto;
   pointer-events: none;
 
@@ -10,29 +9,97 @@
   }
 }
 
+#parallax-concept-a, #parallax-concept-b-top, #parallax-concept-b-bottom, #parallax-team-left, #parallax-team-right {
+  width: 200vw;
+}
+
 #parallax-concept-a {
   z-index: -1;
+  top: 50vh;
   left: 25vw;
+  transform: translate3d(0, -50%, 0)!important
 }
 
 #parallax-concept-b-top {
   top: 0;
-  left: -5vw;
+  left: -50vw;
 }
 
 #parallax-concept-b-bottom {
   bottom: -3vh;
-  left: -5vw;
+  left: -50vw;
+}
+
+#parallax-team-left, #parallax-team-right {
+  width: 100vw;
+  bottom: -3vh;
 }
 
 #parallax-team-left {
-  width: 55vw;
-  bottom: -3vh;
-  left: -5vw;
+  left: -50vw;
 }
 
 #parallax-team-right {
-  width: 55vw;
-  bottom: -3vh;
   left: 60vw;
+}
+
+#parallax-chapter-water-platform-1, #parallax-chapter-water-platform-2, #parallax-chapter-water-platform-3 {
+  width: 100vw;
+  z-index: -1;
+  top: 50vh;
+  left: 0;
+  transform: translate3d(0, -50%, 0)!important
+}
+
+@include media-breakpoint-up(md) {
+  #parallax-concept-a, #parallax-concept-b-top, #parallax-concept-b-bottom, #parallax-team-left, #parallax-team-right {
+    width: 150vw;
+  }
+
+  #parallax-concept-b-top {
+    left: -25vw;
+  }
+
+  #parallax-concept-b-bottom {
+    left: -25vw;
+  }
+
+  #parallax-team-left, #parallax-team-right {
+    width: 75vw;
+  }
+
+  #parallax-team-left {
+    left: -25vw;
+  }
+
+  #parallax-chapter-water-platform-1, #parallax-chapter-water-platform-2, #parallax-chapter-water-platform-3 {
+    width: 50vw;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #parallax-concept-a, #parallax-concept-b-top, #parallax-concept-b-bottom  {
+    width: 110vw;
+  }
+
+  #parallax-concept-b-top {
+    left: -5vw;
+  }
+
+  #parallax-concept-b-bottom {
+    left: -5vw;
+  }
+
+  #parallax-team-left, #parallax-team-right {
+    width: 55vw;
+  }
+
+  #parallax-team-left {
+    left: -5vw;
+  }
+
+  #parallax-chapter-water-platform-1, #parallax-chapter-water-platform-2, #parallax-chapter-water-platform-3 {
+    width: 35vw;
+    left: 15vw;
+  }
 }

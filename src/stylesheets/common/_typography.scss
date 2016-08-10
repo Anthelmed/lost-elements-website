@@ -31,6 +31,11 @@ p {
   color: #a2bbd2;
 }
 
+blockquote {
+  font-weight: 500;
+  font-size: 20px;
+}
+
 @include media-breakpoint-up(md) {
   h1 {
     font-size: 35px;
@@ -53,6 +58,10 @@ p {
 
   .team-name, .team-part {
     font-size: 20px;
+  }
+
+  blockquote {
+    font-size: 24px;
   }
 }
 
@@ -78,5 +87,9 @@ p {
 
   .team-name, .team-part {
     font-size: 22.5px;
+  }
+
+  blockquote {
+    font-size: 28px;
   }
 }

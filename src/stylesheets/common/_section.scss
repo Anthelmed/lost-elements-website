@@ -1,12 +1,52 @@
-#home, #narration, #concept-a, #demo, #concept-b, #team {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+#chapter-wind,
+#chapter-earth,
+#chapter-water,
+#chapter-sun {
+
+  .chapter-wind-border,
+  .chapter-earth-border,
+  .chapter-water-border,
+  .chapter-sun-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
+    padding: 5vw;
+    margin-bottom: 10vh;
+
+    img {
+      max-width: 120px;
+      height: auto;
+    }
+  }
+
+  button.button-border {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  button.button-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10vh;
+    margin: auto;
+  }
+
+  button.button-previous {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10vh;
+    margin: auto;
+  }
 }
 
 #home {
-  background-image: url('/images/background-home.jpg');
-
   img {
     max-width: 200px;
   }
@@ -21,8 +61,6 @@
 }
 
 #narration {
-  background-image: url('/images/background-default.jpg');
-
   button {
     position: absolute;
     bottom: 10vh;
@@ -33,42 +71,66 @@
 }
 
 #teaser {
-  background-image: url('/images/background-default.jpg');
-
   .embed-responsive {
     width: 100vw;
     height: 100vh;
   }
 }
 
-#demo {
-  background-image: url('/images/background-demo.png');
-}
-
 #concept-a {
-  background-image: url('/images/background-concept-a.png');
-
   .text-wrapper {
     max-width: 500px;
   }
 }
 
 #concept-b {
-  background-image: url('/images/background-concept-b.png');
-
   .text-wrapper {
     max-width: 700px;
   }
 }
 
 #demo .demo-video-border {
-  background-image: url('/images/video-border.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   padding: 5vw;
 }
 
-#team {
-  background-image: url('/images/background-team.png');
+#chapter-water-platform-1,
+#chapter-water-platform-2,
+#chapter-water-platform-3 {
+  p {
+    margin: 0!important;
+  }
+
+  h2 {
+    margin: 15px 0!important;
+  }
+}
+
+#chapter-water-sum-up {
+  blockquote {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+
+    &::before, &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 54px;
+      height: 42px;
+      background-image: url('/images/quote.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      top: -40px;
+      left: -80px;
+    }
+
+    &::after {
+      bottom: -40px;
+      right: -80px;
+      transform: rotateZ(180deg);
+    }
+  }
 }

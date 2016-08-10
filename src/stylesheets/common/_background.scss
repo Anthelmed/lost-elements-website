@@ -1,0 +1,103 @@
+#home,
+#narration,
+#concept-a,
+#demo,
+#concept-b,
+#team,
+#chapter-wind,
+#chapter-earth,
+#chapter-water,
+#chapter-sun,
+#chapter-water-platform-1,
+#chapter-water-platform-2,
+#chapter-water-platform-3,
+#chapter-water-sum-up {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#demo .demo-video-border,
+#chapter-wind .chapter-wind-border,
+#chapter-earth .chapter-earth-border,
+#chapter-water .chapter-water-border,
+#chapter-sun .chapter-sun-border {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url('/images/background-home.jpg');
+}
+
+#narration {
+  background-image: url('/images/background-default.jpg');
+}
+
+#teaser {
+  background-image: url('/images/background-default.jpg');
+}
+
+#demo {
+  background-image: url('/images/background-demo.png');
+}
+
+#concept-a {
+  background-image: url('/images/background-concept-a.png');
+}
+
+#concept-b {
+  background-image: url('/images/background-concept-b.png');
+}
+
+#demo .demo-video-border {
+  background-image: url('/images/video-border.png');
+}
+
+#team {
+  background-image: url('/images/background-team.png');
+}
+
+#chapter-wind {
+  background-image: url('/images/background-default.jpg');
+
+  .chapter-wind-border {
+    background-image: url('/images/chapter-wind-border.png');
+  }
+}
+
+#chapter-earth {
+  background-image: url('/images/background-default.jpg');
+
+  .chapter-earth-border {
+    background-image: url('/images/chapter-earth-border.png');
+  }
+}
+
+#chapter-water {
+  background-image: url('/images/background-default.jpg');
+
+  .chapter-water-border {
+    background-image: url('/images/chapter-water-border.png');
+  }
+}
+
+#chapter-sun {
+  background-image: url('/images/background-default.jpg');
+
+  .chapter-sun-border {
+    background-image: url('/images/chapter-sun-border.png');
+  }
+}
+
+#chapter-water {
+  background-image: url('/images/background-default.jpg');
+}
+
+#chapter-water-platform-1, #chapter-water-platform-2, #chapter-water-platform-3, #chapter-water-sum-up {
+  background-image: url('/images/background-chapter-water.png');
+}
+
+
+

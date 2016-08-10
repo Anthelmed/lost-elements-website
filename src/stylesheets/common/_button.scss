@@ -31,7 +31,7 @@
       left: -4px
     }
 
-    &:hover {
+    &:not(:disabled):hover {
       &::before,&::after {
         top: 0;
         left: 0;
@@ -50,5 +50,31 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
+  }
+
+  &.button-next {
+    display: block;
+    margin: auto;
+    width: 32px;
+    height: 17px;
+    background-image: url('/images/button-skip.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotateZ(-90deg);
+  }
+
+  &.button-previous {
+    display: block;
+    margin: auto;
+    width: 32px;
+    height: 17px;
+    background-image: url('/images/button-skip.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotateZ(90deg);
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }

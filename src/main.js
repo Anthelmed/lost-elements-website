@@ -4,9 +4,10 @@ let $body = $('body');
 
 $('main').imagesLoaded({ background: true })
   .done( ( instance ) => {
+  	$('#loader').addClass('finish');
     setTimeout(() => {
       $body.removeClass('loading');
-    },200);
+    },500);
   });
 
 new App();

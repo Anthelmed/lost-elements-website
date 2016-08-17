@@ -15,16 +15,31 @@
     background-image: url('/images/background-default.jpg');
     background-size: cover;
     z-index: 1;
+    opacity: 1;
+    transition: opacity .5s linear;
 
-    img {
-      max-width: 200px;
-      @include animation(breathing, 3s, linear, infinite);
+    &:not(.finish) {
+       img {
+        @include animation(breathing, 3s, linear, infinite);
+      }
+    }
+   
+    &.finish {
+      opacity: 0;
     }
   }
 }
 
 #loader {
   display: none;
+
+  img {
+    max-width: 200px;
+  }
+
+  h1 {
+    opacity: 0;
+  }
 }
 
 @keyframes breathing {

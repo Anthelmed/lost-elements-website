@@ -38,8 +38,7 @@ class App {
       height: '100vh',
       direction: [[0,0],[1,0],[2,0],[3,0],[4,0],[5,0],[6,0],[4,1],[4,2],[4,3],[4,4],[5,3],[6,3],[7,3],[8,3]],
       time: 500,
-      wheelNavigation: true,
-      wheelNavigationDelay: 20
+      wheelNavigation: true
     });
 
     this.ascensor.on("scrollStart", (e, floor) => {

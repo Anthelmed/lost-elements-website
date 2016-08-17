@@ -92,6 +92,20 @@
 
 #demo .demo-video-border {
   padding: 5vw;
+  margin: 37.5px;
+}
+
+#team {
+  .team-name, .team-part, .team-link {
+    display: block;
+  }
+  .team-link {
+    margin-top: 18.75px;
+
+    a {
+      margin: 0 5px;
+    }
+  }
 }
 
 #chapter-water-platform-1,

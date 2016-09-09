@@ -64,11 +64,15 @@ p {
   }
 }
 
-.team-name, .team-part {
+.menu-section, .team-name, .team-part {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   font-family: "Source Sans Pro";
+}
+
+.menu-section {
+  font-weight: 300;
 }
 
 .team-copyright {
@@ -76,7 +80,7 @@ p {
 }
 
 .light-text {
-  color: #a2bbd2;
+  color: $color-blue-light;
 }
 
 blockquote {
@@ -104,7 +108,7 @@ blockquote {
     }
   }
 
-  .team-name, .team-part {
+  .menu-section, .team-name, .team-part {
     font-size: 20px;
   }
 
@@ -133,7 +137,7 @@ blockquote {
     }
   }
 
-  .team-name, .team-part {
+  .menu-section, .team-name, .team-part {
     font-size: 22.5px;
   }
 

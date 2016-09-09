@@ -5,6 +5,29 @@
   height: 55px;
   text-align: center;
   color: $brand-primary;
+  cursor: pointer;
+
+  &.button-menu {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    width: 60px;
+    margin: 0 auto;
+    transition: opacity 0.3s linear;
+    opacity: 1;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-image: url('/images/button-menu.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+  }
 
   &.button-border {
     margin: 10px 0;
@@ -40,44 +63,72 @@
     }
   }
 
-  &.button-skip {
-    line-height: 55px;
-
-    &::after {
-      content: '';
-      display: block;
+  &.button-skip, &.button-next, &.button-previous  {
+    .arrow {
+      position: absolute;
+      left: 0;
+      right: 0;
       margin: auto;
       width: 32px;
       height: 17px;
-      background-image: url('/images/button-skip.png');
-      background-size: contain;
-      background-repeat: no-repeat;
+      pointer-events: none;
+
+      &::before,&::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 32px;
+        height: 17px;
+        background-image: url('/images/button-skip.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 0.3s linear;
+      }
+
+      &::before {
+        top: 0;
+        left: 3px
+      }
+
+      &::after {
+        top: 0;
+        left: -3px
+      }
+    }
+
+    &:not(:disabled):hover {
+      .arrow {
+        &::before, &::after {
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &.button-skip {
+    .arrow {
+      bottom: -20px;
     }
   }
 
   &.button-next {
-    display: block;
-    margin: auto;
-    width: 32px;
-    height: 17px;
-    background-image: url('/images/button-skip.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     transform: rotateZ(-90deg);
   }
 
   &.button-previous {
-    display: block;
-    margin: auto;
-    width: 32px;
-    height: 17px;
-    background-image: url('/images/button-skip.png');
-    background-size: contain;
-    background-repeat: no-repeat;
     transform: rotateZ(90deg);
   }
 
   &:disabled {
     opacity: 0.3;
+    cursor: auto;
+  }
+}
+
+.menu-open {
+  .button.button-menu {
+    opacity: 0;
+    pointer-events: none;
   }
 }

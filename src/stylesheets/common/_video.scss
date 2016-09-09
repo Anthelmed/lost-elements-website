@@ -26,13 +26,18 @@
     z-index: 1;
   }
 
-  .button-play, iframe {
+  .button-play {
     pointer-events: none;
+  }
+
+  &:not(.active) {
+    cursor: pointer;
   }
 
   &.active {
     &::after, .button-play {
       opacity: 0;
+      pointer-events: none;
     }
   }
 

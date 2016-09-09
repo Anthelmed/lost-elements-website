@@ -3,7 +3,7 @@ import App from './app';
 let $body = $('body');
 
 $('main').imagesLoaded({ background: true })
-  .done( ( instance ) => {
+  .always( ( instance ) => {
   	$('#loader').addClass('finish');
     setTimeout(() => {
       $body.removeClass('loading');

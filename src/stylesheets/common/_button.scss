@@ -22,7 +22,7 @@
       display: block;
       width: 50px;
       height: 50px;
-      background-image: url('/images/1x/button-menu.png');
+      background-image: url('/images/05x/button-menu.png');
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -38,7 +38,7 @@
       position: absolute;
       width: 192px;
       height: 55px;
-      background-image: url('/images/1x/button-border.png');
+      background-image: url('/images/05x/button-border.png');
       background-size: contain;
       background-repeat: no-repeat;
       transition: 0.3s linear;
@@ -79,7 +79,7 @@
         position: absolute;
         width: 32px;
         height: 17px;
-        background-image: url('/images/1x/button-skip.png');
+        background-image: url('/images/05x/button-skip.png');
         background-size: contain;
         background-repeat: no-repeat;
         transition: 0.3s linear;
@@ -130,6 +130,30 @@
   .button.button-menu {
     opacity: 0;
     pointer-events: none;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .button {
+    &.button-menu {
+      &::after {
+        background-image: url('/images/1x/button-menu.png');
+      }
+    }
+
+    &.button-border {
+      &::before,&::after {
+        background-image: url('/images/1x/button-border.png');
+      }
+    }
+
+    &.button-skip, &.button-next, &.button-previous {
+      .arrow {
+        &::before,&::after {
+          background-image: url('/images/1x/button-skip.png');
+        }
+      }
+    }
   }
 }
 

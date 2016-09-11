@@ -12,7 +12,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(7,24,38,0.99);
-    background-image: url('/images/1x/background-default.png');
+    background-image: url('/images/05x/background-default.png');
     background-size: cover;
     z-index: 3;
     opacity: 1;
@@ -46,6 +46,14 @@
   0% { opacity: 0.9; }
   50% { opacity: 0.3; }
   100% { opacity: 0.9; }
+}
+
+@include media-breakpoint-up(sm) {
+  .loading {
+    #loader {
+      background-image: url('/images/1x/background-default.png');
+    }
+  }
 }
 
 @include media-breakpoint-up(lg) {

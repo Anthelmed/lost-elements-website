@@ -48,7 +48,7 @@
   100% { opacity: 0.9; }
 }
 
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-up(lg) {
   .loading {
     #loader {
       background-image: url('/images/2x/background-default.png');

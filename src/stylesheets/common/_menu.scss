@@ -65,7 +65,7 @@
   }
 }
 
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-up(lg) {
   #menu {
     &::after {
       background-image: url('/images/2x/menu.png');

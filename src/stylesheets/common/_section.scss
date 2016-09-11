@@ -161,7 +161,7 @@
       position: absolute;
       width: 54px;
       height: 42px;
-      background-image: url('/images/quote.png');
+      background-image: url('/images/1x/quote.png');
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -175,6 +175,16 @@
       bottom: -40px;
       right: -80px;
       transform: rotateZ(180deg);
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  #chapter-water-sum-up {
+    blockquote {
+      &::before, &::after {
+        background-image: url('/images/2x/quote.png');
+      }
     }
   }
 }

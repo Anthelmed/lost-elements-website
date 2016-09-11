@@ -39,7 +39,7 @@ class Menu {
 
 
     $(window).resize( () => { this.handleResize() });
-    $('#nav-main button').click( () => { this.openMenu()() });
+    $('#nav-main button').click( () => { this.openMenu() });
     $('#menu button').click( () => { this.closeMenu() });
     $('#menu').click( () => { this.closeMenu() });
   }

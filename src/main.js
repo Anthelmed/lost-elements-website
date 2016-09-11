@@ -2,7 +2,7 @@ import App from './app';
 
 let $body = $('body');
 
-$('main').imagesLoaded({ background: true })
+$('main').imagesLoaded({ background: '*' })
   .always( ( instance ) => {
   	$('#loader').addClass('finish');
     setTimeout(() => {

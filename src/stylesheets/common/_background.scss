@@ -28,75 +28,149 @@
 }
 
 #home {
-  background-image: url('/images/background-home.jpg');
+  background-image: url('/images/1x/background-home.png');
 }
 
 #narration {
-  background-image: url('/images/background-default.jpg');
+  background-image: url('/images/1x/background-default.png');
 }
 
 #teaser {
-  background-image: url('/images/background-default.jpg');
+  background-image: url('/images/1x/background-default.png');
 }
 
 #demo {
-  background-image: url('/images/background-demo.png');
+  background-image: url('/images/1x/background-demo.png');
 }
 
 #concept-a {
-  background-image: url('/images/background-concept-a.png');
+  background-image: url('/images/1x/background-concept-a.png');
 }
 
 #concept-b {
-  background-image: url('/images/background-concept-b.png');
+  background-image: url('/images/1x/background-concept-b.png');
 }
 
 #demo .demo-video-border {
-  background-image: url('/images/video-border.png');
+  background-image: url('/images/1x/video-border.png');
 }
 
 #team {
-  background-image: url('/images/background-team.png');
+  background-image: url('/images/1x/background-team.png');
 }
 
 #chapter-wind {
-  background-image: url('/images/background-default.jpg');
+  background-image: url('/images/1x/background-default.png');
 
   .chapter-wind-border {
-    background-image: url('/images/chapter-wind-border.png');
+    background-image: url('/images/1x/chapter-wind-border.png');
   }
 }
 
 #chapter-earth {
-  background-image: url('/images/background-default.jpg');
+  background-image: url('/images/1x/background-default.png');
 
   .chapter-earth-border {
-    background-image: url('/images/chapter-earth-border.png');
+    background-image: url('/images/1x/chapter-earth-border.png');
   }
 }
 
 #chapter-water {
-  background-image: url('/images/background-default.jpg');
+  background-image: url('/images/1x/background-default.png');
 
   .chapter-water-border {
-    background-image: url('/images/chapter-water-border.png');
+    background-image: url('/images/1x/chapter-water-border.png');
   }
 }
 
 #chapter-sun {
-  background-image: url('/images/background-default.jpg');
+  background-image: url('/images/1x/background-default.png');
 
   .chapter-sun-border {
-    background-image: url('/images/chapter-sun-border.png');
+    background-image: url('/images/1x/chapter-sun-border.png');
   }
 }
 
 #chapter-water {
-  background-image: url('/images/background-default.jpg');
+  background-image: url('/images/1x/background-default.png');
 }
 
 #chapter-water-platform-1, #chapter-water-platform-2, #chapter-water-platform-3, #chapter-water-sum-up {
-  background-image: url('/images/background-chapter-water.png');
+  background-image: url('/images/1x/background-chapter-water.png');
+}
+
+@include media-breakpoint-up(xl) {
+  #home {
+    background-image: url('/images/2x/background-home.png');
+  }
+
+  #narration {
+    background-image: url('/images/2x/background-default.png');
+  }
+
+  #teaser {
+    background-image: url('/images/2x/background-default.png');
+  }
+
+  #demo {
+    background-image: url('/images/2x/background-demo.png');
+  }
+
+  #concept-a {
+    background-image: url('/images/2x/background-concept-a.png');
+  }
+
+  #concept-b {
+    background-image: url('/images/2x/background-concept-b.png');
+  }
+
+  #demo .demo-video-border {
+    background-image: url('/images/2x/video-border.png');
+  }
+
+  #team {
+    background-image: url('/images/2x/background-team.png');
+  }
+
+  #chapter-wind {
+    background-image: url('/images/2x/background-default.png');
+
+    .chapter-wind-border {
+      background-image: url('/images/2x/chapter-wind-border.png');
+    }
+  }
+
+  #chapter-earth {
+    background-image: url('/images/2x/background-default.png');
+
+    .chapter-earth-border {
+      background-image: url('/images/2x/chapter-earth-border.png');
+    }
+  }
+
+  #chapter-water {
+    background-image: url('/images/2x/background-default.png');
+
+    .chapter-water-border {
+      background-image: url('/images/2x/chapter-water-border.png');
+    }
+  }
+
+  #chapter-sun {
+    background-image: url('/images/2x/background-default.png');
+
+    .chapter-sun-border {
+      background-image: url('/images/2x/chapter-sun-border.png');
+    }
+  }
+
+  #chapter-water {
+    background-image: url('/images/2x/background-default.png');
+  }
+
+  #chapter-water-platform-1, #chapter-water-platform-2, #chapter-water-platform-3, #chapter-water-sum-up {
+    background-image: url('/images/2x/background-chapter-water.png');
+  }
 }
 
 

@@ -19,6 +19,7 @@ class Ascensor {
   init() {
     let hash = window.location.hash.split("#")[window.location.hash.split("#").length - 1];
     let sectionIndex = sectionName.indexOf(hash) || 0;
+    let timerIsInit = false;
 
     this.ascensor = $('main').ascensor({
       ascensorFloorName: sectionName,
@@ -36,7 +37,8 @@ class Ascensor {
     });
 
     this.ascensor.on("scrollEnd", (e, floor) => {
-      if(floor.to == 1) {
+      if(floor.to == 1 && !timerIsInit) {
+        timerIsInit = true;
         setInterval(() => {
           $('#narration p').toggleClass('hide');
         },6000);

@@ -35,6 +35,16 @@ class Ascensor {
         this.handleScroll(floor.to);
     });
 
+    this.ascensor.on("scrollEnd", (e, floor) => {
+      if(floor.to == 1) {
+        setInterval(() => {
+          $('#narration p').toggleClass('hide');
+        },6000);
+      }
+    });
+
+
+
     this.handleScroll(sectionIndex);
     this.handleButtonClick();
   }

@@ -23,10 +23,6 @@ class App {
       new Players();
       new Parallax();
       new Ascensor();
-
-      setInterval(() => {
-        $('#narration p').toggleClass('hide');
-      },6000);
     });
   }
 }

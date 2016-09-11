@@ -51,7 +51,7 @@
       display: block;
       width: 12px;
       height: 12px;
-      background-image: url('/images/05x/menu-bullet.png');
+      background-image: url('/images/1x/menu-bullet.png');
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -74,7 +74,7 @@
 
   .menu-bullet {
     &::after {
-      background-image: url('/images/1x/menu-bullet.png');
+      background-image: url('/images/2x/menu-bullet.png');
     }
   }
 }
@@ -83,12 +83,6 @@
   #menu {
     &::after {
       background-image: url('/images/2x/menu.png');
-    }
-  }
-
-  .menu-bullet {
-    &::after {
-      background-image: url('/images/2x/menu-bullet.png');
     }
   }
 }

@@ -38,7 +38,7 @@
       position: absolute;
       width: 192px;
       height: 55px;
-      background-image: url('/images/05x/button-border.png');
+      background-image: url('/images/1x/button-border.png');
       background-size: contain;
       background-repeat: no-repeat;
       transition: 0.3s linear;
@@ -79,7 +79,7 @@
         position: absolute;
         width: 32px;
         height: 17px;
-        background-image: url('/images/05x/button-skip.png');
+        background-image: url('/images/1x/button-skip.png');
         background-size: contain;
         background-repeat: no-repeat;
         transition: 0.3s linear;
@@ -110,6 +110,11 @@
     .arrow {
       bottom: -20px;
     }
+  }
+
+  &.button-next, &.button-previous {
+    width: 40px;
+    height: 30px;
   }
 
   &.button-next {
@@ -143,14 +148,14 @@
 
     &.button-border {
       &::before,&::after {
-        background-image: url('/images/1x/button-border.png');
+        background-image: url('/images/2x/button-border.png');
       }
     }
 
     &.button-skip, &.button-next, &.button-previous {
       .arrow {
         &::before,&::after {
-          background-image: url('/images/1x/button-skip.png');
+          background-image: url('/images/2x/button-skip.png');
         }
       }
     }
@@ -162,20 +167,6 @@
     &.button-menu {
       &::after {
         background-image: url('/images/2x/button-menu.png');
-      }
-    }
-
-    &.button-border {
-      &::before,&::after {
-        background-image: url('/images/2x/button-border.png');
-      }
-    }
-
-    &.button-skip, &.button-next, &.button-previous {
-      .arrow {
-        &::before,&::after {
-          background-image: url('/images/2x/button-skip.png');
-        }
       }
     }
   }
